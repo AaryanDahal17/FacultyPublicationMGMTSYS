@@ -2,9 +2,20 @@
 /* body {
     background-color: green;
 } */
+body {
+    background-color: #09003c; /* Vibrant blue background color */
+}
+
+.navbar {
+    background-color: #ff5733 !important; /* Vibrant orange background for the navbar */
+}
+
+.navbar-nav .nav-item a.nav-link {
+    color: white !important; /* Ensure nav links are white */
+}
 
 .navbar-nav .nav-item a.nav-link:hover {
-    color: rgb(22, 150, 255);
+    color: rgb(32, 127, 205);
 }
 
 
