@@ -3,25 +3,39 @@
     background-color: green;
 } */
 body {
-    background-color: #09003c; /* Vibrant blue background color */
+    background-color: #000000; /* Vibrant green background color */
+    background-image: url('https://freight.cargo.site/w/5930/q/75/i/f7c7f5d854a7086ac5cec52442fec9688a68c8944628c7e48937810de2e9333c/DSC01256.jpg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-attachment: fixed; /* Fixed background image */
 }
 
+
 .navbar {
-    background-color: #ff5733 !important; /* Vibrant orange background for the navbar */
+    background-image: url('https://e0.pxfuel.com/wallpapers/383/260/desktop-wallpaper-old-book-page-by-daviddiazolivares-for-your-mobile-tablet-explore-book-page-that-looks-like-books-old-book-book-for-walls-old-book-pages-thumbnail.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0); /* Navbar text color white */
+}
+  
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: rgb(0, 0, 0) !important; /* Navbar text color white */
 }
 
 .navbar-nav .nav-item a.nav-link {
-    color: white !important; /* Ensure nav links are white */
+    color: rgb(0, 0, 0) !important; /* Ensure nav links are white */
 }
 
 .navbar-nav .nav-item a.nav-link:hover {
-    color: rgb(32, 127, 205);
+    color: rgb(167, 108, 0);
 }
 
 
 .form-group > button.btn-primary:hover {
-    color: rgb(22, 150, 255);
-    background: white !important;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255) !important;
     /* height: 50px; */
     /* width: 100px; */
     transition: 0.7s;
@@ -31,14 +45,110 @@ body {
     margin: 5px 0px 5px;
 }
 
-.card .container {
-    border-radius: 50px;
-    box-shadow: 5px, 20px ;
-    border-color: rgb(22, 150, 255);
+
+
+/*CARD*/
+
+.card {
+    position: relative;
+    background-image: url('https://e0.pxfuel.com/wallpapers/383/260/desktop-wallpaper-old-book-page-by-daviddiazolivares-for-your-mobile-tablet-explore-book-page-that-looks-like-books-old-book-book-for-walls-old-book-pages-thumbnail.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255); /* Text color white */
+    border-radius: 10px; /* Rounded corners for the box */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow around the box */
+    opacity: 1; /* Opacity of the box */
+    font-family: 'Times New Roman', serif; /* Old-style font */
+    border: 2px solid #804f07; /* Gold border */
 }
 
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay, adjust the alpha value to make it darker or lighter */
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.card * {
+    position: relative;
+    z-index: 1;
+}
+
+.card h2 {
+    color: #d4af37; /* Gold color for headings */
+    font-family: 'Cursive', serif; /* Handwritten style font */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card input {
+    color: rgb(50, 37, 28); /* Dark brown text color */
+    background-color: rgba(255, 239, 213, 0.8); /* Light beige background color with transparency */
+    border: 1px solid #b8860b; /* Gold border */
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace; /* Typewriter font */
+    font-size: 1.2em; /* Larger font size */
+}
+/* Style for the placeholder text */
+.card input::placeholder {
+    color: rgb(50, 37, 28); /* Dark brown placeholder text color */
+}
+
+/* Style for the labels */
+.card label {
+    color: #d4af37; /* Gold label text color */
+    font-family: 'Courier New', Courier, monospace; /* Typewriter font */
+    font-size: 1.2em; /* Larger font size */
+}
+
+/* Style for the login button */
+.card button {
+    background-color: #b8860b; /* Gold background color */
+    color: rgb(50, 37, 28); /* Dark brown text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace; /* Typewriter font */
+    font-size: 1.2em; /* Larger font size */
+}
+
+/* Hover effect for the login button */
+.card button:hover {
+    background-color: #d2b48c; /* Tan background color */
+    color: rgb(50, 37, 28); /* Dark brown text color */
+}
+
+.card .container {
+    border-radius: 50px;
+    box-shadow: 5px, 20px;
+    border-color: rgb(223, 228, 231);
+}
+
+/* Change the color of the "Sign Up" text */
+.card a {
+    color: #b8860b; /* Gold text color */
+    font-family: 'Courier New', Courier, monospace; /* Typewriter font */
+    font-size: 1.2em; /* Larger font size */
+}
+
+/* Hover effect for the "Sign Up" text */
+.card a:hover {
+    color: #d2b48c; /* Tan text color */
+}
+
+
+/*FORM*/
+
 .form-group > label {
-    color: rgb(22, 150, 255);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -46,7 +156,7 @@ body {
 /* ----- Paper Search ------- */
 
 .input-group-btn button:hover {
-    color: rgb(22, 150, 255);
+    color: rgb(105, 65, 28);
     background: white !important;
     transition: 0.7s;
 }
@@ -67,7 +177,7 @@ td {
 } */
 
 .text-right button.btn-primary:hover {
-    color: rgb(22, 150, 255);
+    color: rgb(255, 255, 255);
     background: white !important;
     /* width: 100px; */
     transition: 0.7s;
