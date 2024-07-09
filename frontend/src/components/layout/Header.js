@@ -15,7 +15,7 @@ export class Header extends Component {
       <nav className="navbar navbar-expand-lg custom-navbar d-print-none">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Faculty Publication Management System ok
+            Faculty Publication Management System
           </a>
           <button
             className="navbar-toggler"
