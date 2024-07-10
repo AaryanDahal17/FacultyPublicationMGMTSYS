@@ -16,6 +16,7 @@ export class Header extends Component {
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             Faculty Publication Management System
+
           </a>
           <button
             className="navbar-toggler"
