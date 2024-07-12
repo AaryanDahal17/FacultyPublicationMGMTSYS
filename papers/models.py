@@ -100,3 +100,6 @@ class Paper(models.Model):
 
     def __str__(self):
         return self.title
+
+
+# Biptext Upload have be added as a new Functionality. sample file aman.bip have been tested.
